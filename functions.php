@@ -1,7 +1,7 @@
 <?php
 
 function wpbootstrap_enqueue_styles() {
-wp_enqueue_style( 'bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' );
+wp_enqueue_style( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' );
 wp_enqueue_style( 'my-style', get_template_directory_uri() . '/style.css');
 }
 
