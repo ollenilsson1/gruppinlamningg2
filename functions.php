@@ -9,6 +9,16 @@ function wpbootstrap_enqueue_styles()
 add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
 
 
+add_theme_support('menus');
+register_nav_menus(
+
+    array(
+
+        'main-menu' => 'Om oss menu',
+        'new-menu' => 'Support menu'
+    )
+);
+
 /* Registrera menyer */
 add_theme_support('menus');
 register_nav_menus(
