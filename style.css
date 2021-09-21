@@ -9,3 +9,6 @@ Version: 1.0
 #footer a span {
     color: white;
 }
+ul {
+    list-style-type: none; 
+}
