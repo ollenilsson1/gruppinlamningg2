@@ -4,3 +4,7 @@ Author: Olle, Andrés, Malin, Cornelia
 Description: School assignment
 Version: 1.0
 */
+
+ul {
+    list-style-type: none; 
+}
