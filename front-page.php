@@ -1,7 +1,6 @@
 <?php 
-get_header(); 
+get_header();
 ?>
-
 
 <main>
 <section>
@@ -70,3 +69,4 @@ while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post();
 <?php 
 get_footer(); 
 ?>
+
