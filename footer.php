@@ -31,7 +31,6 @@
       </p>
     </section>
     <!-- Section: Text -->
-
     <!-- Section: Links -->
     <section class="">
       <!--Grid row-->
@@ -39,8 +38,7 @@
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Om oss</h5>
-
-          <?php wp_nav_menu(
+          <?php wp_nav_menu( 
 
             array(
 
@@ -48,9 +46,9 @@
 
               'container' => 'ul',
 
-              'menu_class' => 'menu'
-            )
-          );
+        'style' => "list-unstyled",
+
+        'menu_class' => 'menu' ) ); 
 
           ?>
 
@@ -60,8 +58,7 @@
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Support</h5>
-
-          <?php wp_nav_menu(
+          <?php wp_nav_menu( 
 
             array(
 
@@ -69,9 +66,9 @@
 
               'container' => 'ul',
 
-              'menu_class' => 'menu'
-            )
-          );
+        'style' => "list-unstyled",
+
+        'menu_class' => 'menu' ) ); 
 
           ?>
         </div>
@@ -81,26 +78,25 @@
           <h5 class="text-uppercase">Betalning & leverans </h5>
           <ul class="list-unstyled mb-0">
             <li>
-              <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-visa fa-2x"></i>
             </li>
             <li>
-              <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-paypal fa-2x"></i>
             </li>
             <li>
-              <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-mastercard fa-2x"></i>
             </li>
             <li>
-              <i class="fab fa-apple-pay"></i>
+                <i class="fab fa-apple-pay fa-2x"></i>
             </li>
           </ul>
 
         </div>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <ul class="list-unstyled mb-0">
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <ul class="list-unstyled mb-0"> 
           <h5 class="text-uppercase">-logo-</h5>
 
 
@@ -111,7 +107,7 @@
   </section>
   <!-- Section: Links -->
   </div>
-  <!-- Grid container -->
+  <!-- Grid container --> 
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
