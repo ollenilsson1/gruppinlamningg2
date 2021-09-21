@@ -1,38 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html>
-<head>
-	<meta charset="UTF-8" />
-	<title></title>
-	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<script src="js/jquery.js"></script>
-
-   
-    <?php wp_head(); ?>
-</head>
-<body> 
-=======
-<<<<<<< HEAD
-<html>
-
-<head>
-    <meta charset="UTF-8" />
-    <title>Sportstore</title>
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
-
-    <?php wp_head(); ?>
-</head>
-
-<body>
-=======
 <html lang="en">
 
 <head>
@@ -72,5 +38,4 @@
       </div>
     </div>
   </header>
->>>>>>> 664dd17660ca94be4675996584ac015ddaf26a0f
->>>>>>> 4dc2d672d047de74429b07c3b0f12cd6bde7a3a5
+
