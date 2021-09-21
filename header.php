@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
+
 <html>
 <head>
 	<meta charset="UTF-8" />
@@ -8,31 +8,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-speciallettersandnumbers" crossorigin="anonymous">
 	<script src="js/jquery.js"></script>
 
    
     <?php wp_head(); ?>
 </head>
 <body> 
-=======
-<<<<<<< HEAD
-<html>
 
-<head>
-    <meta charset="UTF-8" />
-    <title>Sportstore</title>
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
-
-    <?php wp_head(); ?>
-</head>
-
-<body>
-=======
 <html lang="en">
 
 <head>
@@ -52,9 +35,10 @@
             <use xlink:href="#bootstrap"></use>
           </svg>
         </a>
-
+        <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-start" style="width: 15vw; height: 5vw; margin-right: 3vw;"/> 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="" class="nav-link px-2 text-secondary">Home</a></li>
+        
+        <li><a href="" class="nav-link px-2 text-secondary">Home</a></li>
           <li><a href="" class="nav-link px-2 text-white">Features</a></li>
           <li><a href="" class="nav-link px-2 text-white">Pricing</a></li>
           <li><a href="" class="nav-link px-2 text-white">FAQs</a></li>
@@ -72,5 +56,4 @@
       </div>
     </div>
   </header>
->>>>>>> 664dd17660ca94be4675996584ac015ddaf26a0f
->>>>>>> 4dc2d672d047de74429b07c3b0f12cd6bde7a3a5
+
