@@ -1,6 +1,5 @@
 <?php
 
-
 function wpbootstrap_enqueue_styles()
 {
     wp_enqueue_style('bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css');
@@ -8,18 +7,6 @@ function wpbootstrap_enqueue_styles()
 }
 
 add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
-
-
-add_theme_support('post-thumbnails');
-
-?>
-
-
-
-
-
-<?php
-
 
 
 add_theme_support('menus');
@@ -32,8 +19,14 @@ register_nav_menus(
     )
 );
 
-?>
+/* Registrera menyer */
+add_theme_support('menus');
+register_nav_menus(
+    array(
+        'header-menu' => 'Header Menu',
+    )
+);
 
 
 
-            
+add_theme_support('post-thumbnails');

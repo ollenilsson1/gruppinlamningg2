@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 get_header(); 
 ?>
@@ -70,3 +71,13 @@ while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post();
 <?php 
 get_footer(); 
 ?>
+=======
+<?php get_header(); ?>
+
+<main>
+
+</main>
+
+
+<?php get_footer(); ?>
+>>>>>>> 664dd17660ca94be4675996584ac015ddaf26a0f
