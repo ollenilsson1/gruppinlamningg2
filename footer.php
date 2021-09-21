@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- Footer -->
 <footer class="bg-dark text-center text-white">
   <!-- Grid container -->
@@ -132,12 +131,4 @@ array(
 
 <?php wp_footer(); ?>
 </body>
-=======
-<footer>
-    footer
-</footer>
-<?php wp_footer(); ?>
-</body>
-
->>>>>>> 664dd17660ca94be4675996584ac015ddaf26a0f
 </html>
