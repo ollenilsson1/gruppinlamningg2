@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-<?php 
-get_header(); 
-?>
-
-
-<main>
-<section>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="img/gymbild1.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/gymbild2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/gymbild3.jpg" alt="Third slide">
-=======
 <?php
 get_header();
 ?>
@@ -53,7 +29,6 @@ get_header();
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
->>>>>>> cc0588ba57c9519bfeec775955b7fd186edf1309
     </div>
 
 

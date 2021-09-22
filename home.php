@@ -13,14 +13,14 @@
         ?>
 
             <article class="card" style="padding: 4vw; margin: 2vw; justify-content: center;">
-                <div class="card-body" >
-                <h2 class="title">
-                    <?php the_title(); ?>
-                </h2>
-                <i class="fa fa-calendar"></i> <?php echo get_the_date(); ?>
-                <p>
-                    <?php the_content(); ?>
-                </p>
+                <div class="card-body">
+                    <h2 class="title">
+                        <?php the_title(); ?>
+                    </h2>
+                    <i class="fa fa-calendar"></i> <?php echo get_the_date(); ?>
+                    <p>
+                        <?php the_content(); ?>
+                    </p>
                 </div>
             </article>
         <?php endwhile; ?>
@@ -34,28 +34,30 @@
     <?php endif; ?>
 
     <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center" >
-  <li class="page-item">
- 
-						<?php
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
 
-						global $wp_query;
+                <?php
 
-						$big = 999999999; // need an unlikely integer
+                global $wp_query;
 
-						echo paginate_links(array(
-							'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-							'format' => '?paged=%#%',
-							'current' => max(1, get_query_var('paged')),
-							'total' => $wp_query->max_num_pages,
-						));
+                $big = 999999999; // need an unlikely integer
 
-						?>
-    
-  </li></ul></nav>
-					</div>
+                echo paginate_links(array(
+                    'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+                    'format' => '?paged=%#%',
+                    'current' => max(1, get_query_var('paged')),
+                    'total' => $wp_query->max_num_pages,
+                ));
 
-    </section>
+                ?>
+
+            </li>
+        </ul>
+    </nav>
+</div>
+
+</section>
 </div>
 </div>
 </div>
