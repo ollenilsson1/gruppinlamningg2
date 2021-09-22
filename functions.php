@@ -16,7 +16,8 @@ register_nav_menus(
     array(
 
         'main-menu' => 'Om oss menu',
-        'new-menu' => 'Support menu'
+        'new-menu' => 'Support menu',
+        'socials' => 'Socials',
     )
 );
 
@@ -29,12 +30,8 @@ register_nav_menus(
 );
 
 // Woocommerce
-function mytheme_add_woocommerce_support()
-{
-    add_theme_support('woocommerce');
-}
+add_theme_support('woocommerce');
 
-add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
 
 add_theme_support('post-thumbnails');
 
@@ -66,3 +63,5 @@ function prefix_bs5_dropdown_data_attribute( $atts, $item, $args ) {
     }
     return $atts;
 }
+
+add_theme_support('woocommerce');
