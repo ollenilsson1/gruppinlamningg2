@@ -1,6 +1,6 @@
 <?php 
 get_header(); 
-$data = get_field('slides', 77);
+$data = get_field('slides', 33);
 
 ?>
 
@@ -22,9 +22,10 @@ $data = get_field('slides', 77);
     <div class="carousel-item">
       <img class="d-block w-100" src="<?php echo $data['image_3']['url']; ?>" alt="Third slide">
     </div>
+</section>
 
 
-
+<section>
 
     <!-- the query -->
     <div class="container">
