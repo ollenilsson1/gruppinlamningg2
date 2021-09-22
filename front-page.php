@@ -1,6 +1,7 @@
 <?php 
 get_header(); 
 $data = get_field('slides', 77);
+
 ?>
 
 <main>
@@ -48,15 +49,13 @@ $data = get_field('slides', 77);
         <?php endwhile; ?>
         <!-- end of loop -->
 
-        <?php wp_reset_postdata(); ?>
-        <!--  restores the $post global to the current post in the main query -->
+					<?php else : ?>
+						<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+					<?php endif; ?>
 
-      <?php else : ?>
-        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-      <?php endif; ?>
-
-  </section>
+</section>
 </main>
-<?php
-get_footer();
-?>
+
+
+<?php get_footer(); ?>
+

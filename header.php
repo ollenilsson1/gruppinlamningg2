@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-speciallettersandnumbers" crossorigin="anonymous">
+	<script src="js/jquery.js"></script>
+
+   
+    <?php wp_head(); ?>
+</head>
+<body> 
+
 <html lang="en">
 
 <head>
@@ -10,23 +27,15 @@
 </head>
 
 <body>
-  
+
 <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-start" style="width: 15vw; height: 5vw; margin-right: 3vw;"/> 
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
     <span class="navbar-toggler-icon"></span>
     </button>
 
-<<<<<<< HEAD
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="faq.php" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="" class="nav-link px-2 text-white">About</a></li>
-        </ul>
-=======
     <a class="navbar-brand" href="#">Navbar</a>
         <?php
         wp_nav_menu( array(
@@ -42,6 +51,5 @@
         ?>
     </div>
 </nav>
->>>>>>> cc0588ba57c9519bfeec775955b7fd186edf1309
 
 
