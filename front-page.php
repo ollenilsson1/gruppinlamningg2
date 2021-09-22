@@ -1,38 +1,31 @@
 <?php
 get_header();
+$data = get_field('slides', 48);
+
 ?>
 
 <main>
   <section>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="img/gymbild1.jpg" alt="First slide">
+          <img class="d-block w-100" src="<?php echo $data['image_1']['url']; ?>" alt="First slide">
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/gymbild2.jpg" alt="Second slide">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="<?php echo $data['image_2']['url']; ?>" alt="Second slide">
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/gymbild3.jpg" alt="Third slide">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="<?php echo $data['image_3']['url']; ?>" alt="Third slide">
         </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+  </section>
 
 
-
+  <section>
 
     <!-- the query -->
     <div class="container">
@@ -57,22 +50,14 @@ get_header();
         <?php endwhile; ?>
         <!-- end of loop -->
 
-        <?php wp_reset_postdata(); ?>
-        <!--  restores the $post global to the current post in the main query -->
-
       <?php else : ?>
         <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
       <?php endif; ?>
 
   </section>
 </main>
-<<<<<<< HEAD
 <?php 
 get_footer(); 
 ?>
 
-=======
-<?php
-get_footer();
-?>
->>>>>>> cc0588ba57c9519bfeec775955b7fd186edf1309
+
