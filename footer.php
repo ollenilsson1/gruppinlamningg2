@@ -31,7 +31,6 @@
       </p>
     </section>
     <!-- Section: Text -->
-
     <!-- Section: Links -->
     <section class="row">
       <!--Grid row-->
@@ -39,8 +38,7 @@
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Om oss</h5>
-
-          <?php wp_nav_menu(
+          <?php wp_nav_menu( 
 
             array(
 
@@ -100,15 +98,14 @@
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: 2vw;">
         <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" />
-
-
-      </div>
+        </div>
+        <!--Grid column-->
+        
       </div>
       <!--Grid row-->
       </section>
     <!-- Section: Links -->
   </div>
-  <!-- Grid container -->
  
 </footer>
 
