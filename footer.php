@@ -22,6 +22,16 @@
             <!-- Github -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
         </section>
+        <?php
+								// Gets the menu from WP, in the admin panel you can see i used a plugin so i can get the socials ikons in the menu.  
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'socials',
+										'container' => 'ul',
+										'menu_class' => 'social'
+                                    )
+                                );
+                            ?>
         <!-- Section: Social media -->
 
         <!-- Section: Text -->
@@ -112,6 +122,26 @@
         <!-- Section: Links -->
     </div>
 
+    </section>
+    
+    <!-- Section: Social media -->
+
+    
+   
+      
+  </div>
+  <!--Grid row-->
+  </section>
+  <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright Sportstore
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
 </footer>
 
 <?php wp_footer(); ?>
