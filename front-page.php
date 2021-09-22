@@ -1,6 +1,6 @@
 <?php
 get_header();
-$data = get_field('slides', 48);
+$data = get_field('slides', 77);  //OLLE 33, ANDRES 48, MALIN 77, CORNELIA 69
 
 ?>
 
