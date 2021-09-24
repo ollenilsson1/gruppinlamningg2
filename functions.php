@@ -149,5 +149,3 @@ function prefix_bs5_dropdown_data_attribute( $atts, $item, $args ) {
     }
     return $atts;
 }
-
-add_theme_support('woocommerce');
