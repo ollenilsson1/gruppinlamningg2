@@ -1,25 +1,25 @@
-<?php 
+<?php
 /*
 Template Name: kontakt
 */
 ?>
-<?php 
+<?php
 get_header();
 ?>
 
 <main>
-<section>
-    <div class="container">
-        <div class="row">
-            <div id="primary" class="col-xs-12 col-md-9">
-                <h1><?php the_title(); ?></h1>
-                <p><?php the_content(); ?></p>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div id="primary" class="col-xs-12 col-md-9">
+                    <h1><?php the_title(); ?></h1>
+                    <p><?php the_content(); ?></p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 </main>
 
-<?php 
+<?php
 get_footer();
 ?>
