@@ -2,37 +2,25 @@
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        <!-- Section: Social media, Lägger en section med rätt klass och a klassen kommer från funktions.php -->
 
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+<?php
 
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+$menuParameters = array(
+    'theme_location' => 'socials',
+    'link_before'     => '<span>',
+    'link_after'      => '</span>',
+    'before'        => '<section class="mb-4">',
+    'after'     => '</section>',
+    'add_a_class'     => 'btn btn-outline-light btn-floating m-1',
+    'container'       => false,
+    'echo'            => false,
+    'depth'           => 0,
+);
 
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
-        </section>
-        <?php
-								// Gets the menu from WP, in the admin panel you can see i used a plugin so i can get the socials ikons in the menu.  
-                                wp_nav_menu(
-                                    array(
-                                        'theme_location' => 'socials',
-										'container' => 'ul',
-										'menu_class' => 'social'
-                                    )
-                                );
-                            ?>
-        <!-- Section: Social media -->
+echo strip_tags(wp_nav_menu( $menuParameters ), '<a><span><div>' );
+?>
 
         <!-- Section: Text -->
         <section class="mb-4">
