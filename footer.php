@@ -46,25 +46,25 @@
             <!--Grid row-->
             <div class="row">
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Om oss</h5>
-                    <ul>
+                    <!-- add_a_class kommer från functions.php -->
                     <?php wp_nav_menu(
 
                         array(
 
                             'theme_location' => 'main-menu',
 
-                            'container' => 'a',
+                            'container' => false,
 
-                            'style' => 'link-light',
+                            'menu_class' => 'list-unstyled mb-2',
 
-                            'menu_class' => 'menu'
+                            'add_a_class'     => 'text-white text-decoration-none',
                         )
                     );
 
                     ?>
-                </ul>
+                
                 </div>
                 <!--Grid column-->
 
@@ -77,11 +77,11 @@
 
                             'theme_location' => 'new-menu',
 
-                            'container' => 'ul',
+                            'container' => false,
 
-                            'style' => "list-unstyled",
+                            'menu_class' => 'list-unstyled mb-2',
 
-                            'menu_class' => 'menu'
+                            'add_a_class'     => 'text-white text-decoration-none',
                         )
                     );
 
@@ -111,7 +111,7 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: 2vw;">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" />
                 </div>
                 <!--Grid column-->

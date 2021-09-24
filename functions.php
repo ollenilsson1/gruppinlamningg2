@@ -207,7 +207,18 @@ function ButikerCustom_post_type() {
     */
      
     add_action( 'init', 'ButikerCustom_post_type', 0 );
-    
+
+
+
+    //API KEY FÖR google Maps
+
+
+    function storeMapKey($api){
+        $api['key'] = 'AIzaSyDqxvdLzQZIdV1C5eioJ7FBTMxKmugBioE';
+        return $api;
+    }
+
+    add_filter('acf/fields/google_map/api', 'storeMapKey');
 /**
  * Register Custom Navigation Walker
  */
@@ -237,3 +248,16 @@ function prefix_bs5_dropdown_data_attribute( $atts, $item, $args ) {
 }
 
 add_theme_support('woocommerce');
+
+
+/* Funktion för att ändra klass på a taggar i wp_nav_menu */
+
+function add_additional_class_on_a($classes, $item, $args)
+{
+    if (isset($args->add_a_class)) {
+        $classes['class'] = $args->add_a_class;
+    }
+    return $classes;
+}
+
+add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
