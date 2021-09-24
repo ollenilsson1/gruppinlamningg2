@@ -5,22 +5,22 @@
         <!-- Section: Social media, Lägger en section med rätt klass och a klassen kommer från funktions.php -->
 
 
-<?php
+        <?php
 
-$menuParameters = array(
-    'theme_location' => 'socials',
-    'link_before'     => '<span>',
-    'link_after'      => '</span>',
-    'before'        => '<section class="mb-4">',
-    'after'     => '</section>',
-    'add_a_class'     => 'btn btn-outline-light btn-floating m-1',
-    'container'       => false,
-    'echo'            => false,
-    'depth'           => 0,
-);
+        $menuParameters = array(
+            'theme_location' => 'socials',
+            'link_before'     => '<span>',
+            'link_after'      => '</span>',
+            'before'        => '<section class="mb-4">',
+            'after'     => '</section>',
+            'add_a_class'     => 'btn btn-outline-light btn-floating m-1',
+            'container'       => false,
+            'echo'            => false,
+            'depth'           => 0,
+        );
 
-echo strip_tags(wp_nav_menu( $menuParameters ), '<a><span><div>' );
-?>
+        echo strip_tags(wp_nav_menu($menuParameters), '<a><span><div>');
+        ?>
 
         <!-- Section: Text -->
         <section class="mb-4">
@@ -52,7 +52,7 @@ echo strip_tags(wp_nav_menu( $menuParameters ), '<a><span><div>' );
                     );
 
                     ?>
-                
+
                 </div>
                 <!--Grid column-->
 
@@ -111,25 +111,25 @@ echo strip_tags(wp_nav_menu( $menuParameters ), '<a><span><div>' );
     </div>
 
     </section>
-    
+
     <!-- Section: Social media -->
 
-    
-   
-      
-  </div>
-  <!--Grid row-->
-  </section>
-  <!-- Section: Links -->
-  </div>
-  <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright Sportstore
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
+
+
+    </div>
+    <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright Sportstore
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
 </footer>
 
 <?php wp_footer(); ?>
