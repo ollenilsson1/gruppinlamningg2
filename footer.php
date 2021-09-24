@@ -94,6 +94,9 @@
                         <li>
                             <i class="fab fa-apple-pay fa-2x"></i>
                         </li>
+                        <li>
+                        <i class="fab fa-cc-amex fa-2x"></i>
+                        </li>
                     </ul>
 
                 </div>
@@ -102,7 +105,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: 2vw;">
-                    <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" />
+                <a href= "<?php bloginfo('url')?>" > <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" /></a>
                 </div>
                 <!--Grid column-->
 
