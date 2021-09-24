@@ -11,8 +11,8 @@
         <?php
         while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post();
         ?>
-
-            <article class="card" style="padding: 4vw; margin: 2vw; justify-content: center;">
+<div class="row d-flex justify-content-center">
+            <article class="card p-3 m-4 w-75">
                 <div class="card-body">
                     <h2 class="title">
                         <?php the_title(); ?>
@@ -23,6 +23,7 @@
                     </p>
                 </div>
             </article>
+        </div>
         <?php endwhile; ?>
         <!-- end of loop -->
 

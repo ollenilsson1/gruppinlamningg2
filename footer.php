@@ -34,19 +34,12 @@
                             ?>
         <!-- Section: Social media -->
 
-        <!-- Section: Text -->
-        <section class="mb-4">
-            <p>
-                en text typ
-            </p>
-        </section>
-        <!-- Section: Text -->
         <!-- Section: Links -->
-        <section class="row">
+        <section class="container">
             <!--Grid row-->
             <div class="row">
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+                <div class="row col-lg-3 col-md-6 mb-4 mb-md-2">
                     <h5 class="text-uppercase">Om oss</h5>
                     <ul>
                     <?php wp_nav_menu(
@@ -69,7 +62,7 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="row col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Support</h5>
                     <?php wp_nav_menu(
 
@@ -102,7 +95,10 @@
                             <i class="fab fa-cc-mastercard fa-2x"></i>
                         </li>
                         <li>
-                            <i class="fab fa-apple-pay fa-2x"></i>
+                        <i class="fab fa-cc-apple-pay fa-2x"></i>
+                        </li>
+                        <li>
+                        <i class="fab fa-cc-amex fa-2x"></i>
                         </li>
                     </ul>
 
