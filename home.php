@@ -61,6 +61,7 @@
     </nav>
 </div>
 
+<!-- Vad har ni gjort Malin lr Cornelia?????
 </section>
 </div>
 </div>
@@ -69,7 +70,7 @@
 </div>
 </div>
 </div>
-</main>
+</main> -->
 
 
 <?php get_footer(); ?>

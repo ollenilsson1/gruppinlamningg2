@@ -2,37 +2,25 @@
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        <!-- Section: Social media, Lägger en section med rätt klass och a klassen kommer från funktions.php -->
 
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
-        </section>
         <?php
-								// Gets the menu from WP, in the admin panel you can see i used a plugin so i can get the socials ikons in the menu.  
-                                wp_nav_menu(
-                                    array(
-                                        'theme_location' => 'socials',
-										'container' => 'ul',
-										'menu_class' => 'social'
-                                    )
-                                );
-                            ?>
-        <!-- Section: Social media -->
+
+        $menuParameters = array(
+            'theme_location' => 'socials',
+            'link_before'     => '<span>',
+            'link_after'      => '</span>',
+            'before'        => '<section class="mb-4">',
+            'after'     => '</section>',
+            'add_a_class'     => 'btn btn-outline-light btn-floating m-1',
+            'container'       => false,
+            'echo'            => false,
+            'depth'           => 0,
+        );
+
+        echo strip_tags(wp_nav_menu($menuParameters), '<a><span><div>');
+        ?>
 
         <!-- Section: Links -->
         <section class="row">
@@ -41,23 +29,23 @@
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-2 mx-auto">
                     <h5 class="text-uppercase">Om oss</h5>
-                    <ul>
+                    <!-- add_a_class kommer från functions.php -->
                     <?php wp_nav_menu(
 
                         array(
 
                             'theme_location' => 'main-menu',
 
-                            'container' => 'a',
+                            'container' => false,
 
-                            'style' => 'link-light',
+                            'menu_class' => 'list-unstyled mb-2',
 
-                            'menu_class' => 'menu'
+                            'add_a_class'     => 'text-white text-decoration-none',
                         )
                     );
 
                     ?>
-                </ul>
+
                 </div>
                 <!--Grid column-->
 
@@ -70,11 +58,11 @@
 
                             'theme_location' => 'new-menu',
 
-                            'container' => 'ul',
+                            'container' => false,
 
-                            'style' => "list-unstyled",
+                            'menu_class' => 'list-unstyled mb-2',
 
-                            'menu_class' => 'menu'
+                            'add_a_class'     => 'text-white text-decoration-none',
                         )
                     );
 
@@ -107,7 +95,7 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-top: 2vw;">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" />
                 </div>
                 <!--Grid column-->
@@ -119,25 +107,24 @@
     </div>
 
     </section>
-    
+
     <!-- Section: Social media -->
 
-    
-   
-      
-  </div>
-  <!--Grid row-->
-  </section>
-  <!-- Section: Links -->
-  </div>
-  <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright Sportstore
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
+
+
+    </div>
+    <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright Sportstore
+    </div>
+    <!-- Copyright -->
 </footer>
 
 <?php wp_footer(); ?>
