@@ -30,7 +30,7 @@
 
 <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
 <a href="<?php bloginfo('url')?>">
-    <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-start" style="width: 15vw; height: 5vw; margin-right: 3vw;"/>
+    <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-start" style="width: 15vw; height: 5vw; margin-right: 4vw; margin-left: 3vw; padding: 0.5vw;"/>
 </a>  
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
