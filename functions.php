@@ -212,16 +212,6 @@ add_action('init', 'ButikerCustom_post_type', 0);
 
 
 
-//API KEY FÖR google Maps
-
-
-function storeMapKey($api)
-{
-    $api['key'] = 'AIzaSyDqxvdLzQZIdV1C5eioJ7FBTMxKmugBioE';
-    return $api;
-}
-
-add_filter('acf/fields/google_map/api', 'storeMapKey');
 /**
  * Register Custom Navigation Walker
  */
