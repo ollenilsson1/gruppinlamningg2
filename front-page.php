@@ -57,5 +57,44 @@ $data = get_field('slides', 77);  //OLLE 33, ANDRES 48, MALIN 77, CORNELIA 69
     </section>
 </main>
 
+    <!-- card section for sale and blogposts --> 
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
 
-<?php get_footer(); ?>
+                    <!-- the query -->
+
+                    <?php
+                    $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 1));
+                    if ($wpb_all_query->have_posts()) :
+                    ?>
+                        <!-- loop to get posts -->
+                        <?php
+                        while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post();
+                        ?>
+                            <div class="card mb-4">
+                                <article>
+                                    <div class="card-body">
+                                        <h2 class="title">
+                                            <?php the_title(); ?>
+                                        </h2>
+                                        <i class="fa fa-calendar"></i> <?php echo get_the_date(); ?>
+                                        <p>
+                                            <?php the_excerpt(); ?>
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        <?php endwhile; ?>
+                        <!-- end of loop -->
+
+                    <?php else : ?>
+                        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                    <?php endif; ?>
+
+    </section>
+</main>
+<?php
+get_footer();
+?>

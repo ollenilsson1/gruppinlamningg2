@@ -1,9 +1,9 @@
-<?php 
+<?php
 /*
 Template Name: kontakt
 */
 ?>
-<?php 
+<?php
 get_header();
 ?>
 
@@ -16,11 +16,10 @@ get_header();
                 <p><?php the_content(); ?></p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 </main>
 
-<?php 
+<?php
 get_footer();
 ?>
 

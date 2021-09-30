@@ -23,6 +23,7 @@
                     </p>
                 </div>
             </article>
+
         </div>
         <?php endwhile; ?>
         <!-- end of loop -->
@@ -35,8 +36,9 @@
     <?php endif; ?>
 
     <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
+        <ul class="pagination justify-content-center my-4">
             <li class="page-item">
+                <button class="btn btn-outline-dark" style="text-decoration:none; cursor: pointer;">
 
                 <?php
 
@@ -52,21 +54,10 @@
                 ));
 
                 ?>
-
+</button>
             </li>
         </ul>
     </nav>
 </div>
-
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-
 
 <?php get_footer(); ?>
