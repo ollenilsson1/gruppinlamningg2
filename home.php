@@ -11,8 +11,8 @@
         <?php
         while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post();
         ?>
-
-            <article class="card" style="padding: 4vw; margin: 2vw; justify-content: center;">
+<div class="row d-flex justify-content-center">
+            <article class="card p-3 m-4 w-75">
                 <div class="card-body">
                     <h2 class="title">
                         <?php the_title(); ?>
@@ -23,6 +23,8 @@
                     </p>
                 </div>
             </article>
+
+        </div>
         <?php endwhile; ?>
         <!-- end of loop -->
 
@@ -34,8 +36,9 @@
     <?php endif; ?>
 
     <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
+        <ul class="pagination justify-content-center my-4">
             <li class="page-item">
+                <button class="btn btn-outline-dark" style="text-decoration:none; cursor: pointer;">
 
                 <?php
 
@@ -51,22 +54,10 @@
                 ));
 
                 ?>
-
+</button>
             </li>
         </ul>
     </nav>
 </div>
-
-<!-- Vad har ni gjort Malin lr Cornelia?????
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main> -->
-
 
 <?php get_footer(); ?>

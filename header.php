@@ -13,13 +13,20 @@
     <script src="js/jquery.js"></script>
 
 
-    <?php wp_head(); ?>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportStore</title>
+  <?php wp_head(); ?>
 </head>
 
 <body>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
-
+<a href="<?php bloginfo('url')?>">
+    <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-start" style="width: 15vw; height: 5vw; margin-right: 4vw; margin-left: 3vw; padding: 0.5vw;"/>
+</a>  
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
