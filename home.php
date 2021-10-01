@@ -14,9 +14,11 @@
 <div class="row d-flex justify-content-center">
             <article class="card p-3 m-4 w-75">
                 <div class="card-body">
+                <a href="<?php the_permalink(); ?>">
                     <h2 class="title">
                         <?php the_title(); ?>
                     </h2>
+                    </a>
                     <i class="fa fa-calendar"></i> <?php echo get_the_date(); ?>
                     <p>
                         <?php the_content(); ?>
