@@ -11,13 +11,13 @@
 
 
 <header class="page-header">
-                <h1 class="page-title"><?php _e( 'Not Found', 'sportstore' ); ?></h1>
+                <h1 class="page-title"><?php _e( 'Sidan kunde inte hittas', 'sportstore' ); ?></h1>
             </header>
  
             <div class="page-wrapper">
                 <div class="page-content">
-                    <h2><?php _e( 'Något blev fel', 'sportstore' ); ?></h2>
-                    <p><?php _e( 'Vi kunde inte hitta sidan, prova sök eller använd menyn', 'sportstore' ); ?></p>
+                  
+                    <p><?php _e( 'Prova sök eller använd menyn', 'sportstore' ); ?></p>
  
 </div>
 
