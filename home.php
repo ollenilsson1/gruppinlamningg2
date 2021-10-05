@@ -16,9 +16,18 @@
                 <div class="card-body">
                 <a href="<?php the_permalink(); ?>">
                     <h2 class="title">
-                        <?php the_title(); ?>
+                    <?php the_title(); ?>
+                    
+                        
                     </h2>
                     </a>
+                    <?php if(has_post_thumbnail()) : ?>
+                                <!-- If you click on the image then you will go to its post  -->
+                                <a href="<?php the_permalink();?>">   
+                                    <!-- Gets the Image  -->
+                                    <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>" />
+                                </a>
+                            <?php endif; ?>
                     <i class="fa fa-calendar"></i> <?php echo get_the_date(); ?>
                     <p>
                         <?php the_content(); ?>

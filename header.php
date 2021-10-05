@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <meta charset="UTF-8" />
     <title></title>
@@ -31,7 +29,7 @@
     <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-start" style="width: 15vw; height: 5vw; margin-right: 3vw;"/></a>
+    <a class="navbar-brand" href="<?php bloginfo('url')?>"> <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-start" style="width: 15vw; height: 5vw; margin-right: 3vw;"/></a>
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'header-menu',

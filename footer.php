@@ -4,7 +4,7 @@
     <div class="container p-4">
         <!-- Section: Social media, Lägger en section med rätt klass och a klassen kommer från funktions.php -->
 
-
+    <div class="p-3">
         <?php
 
         $menuParameters = array(
@@ -21,9 +21,9 @@
 
         echo strip_tags(wp_nav_menu($menuParameters), '<a><span><div>');
         ?>
-
+    </div>
         <!-- Section: Links -->
-        <section class="row">
+        <section class="row p-3">
             <!--Grid row-->
             <div class="row mx-auto">
                 <!--Grid column-->
@@ -96,7 +96,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" />
+                    <a href="<?php bloginfo('url')?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" /></a>
                 </div>
                 <!--Grid column-->
 

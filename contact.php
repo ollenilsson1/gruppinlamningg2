@@ -22,7 +22,3 @@ get_header();
 <?php
 get_footer();
 ?>
-
-
-<div class="row d-flex justify-content-center">
-                <div id="primary" class="col-xs-12 col-md-9 p-3 m-4 w-75">
