@@ -14,7 +14,7 @@
             <div class="row d-flex justify-content-center">
                 <article class="card p-3 m-4 w-75">
                     <div class="card-body">
-                        <a href="<?php the_permalink(); ?>">
+                        <a class="text-decoration-none text-secondary"href="<?php the_permalink(); ?>">
                             <h2 class="title">
                                 <?php the_title(); ?>
                             </h2>
@@ -43,7 +43,7 @@
     <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center my-4">
             <li class="page-item">
-                <button class="btn btn-outline-dark" style="text-decoration:none; cursor: pointer;">
+                <button class="btn btn-outline-dark" style="cursor: pointer;">
 
                     <?php
 

@@ -3,7 +3,7 @@
 <div class="content">
     <div class="container">
         <div class="row">
-            <div class="col-12 woocommerce">
+            <div class="col-12 woocommerce mt-5">
                 <?php woocommerce_content(); ?>
             </div>
         </div>
