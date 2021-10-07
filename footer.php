@@ -4,24 +4,23 @@
     <div class="container p-4">
         <!-- Section: Social media, Lägger en section med rätt klass och a klassen kommer från funktions.php -->
 
-    <div class="p-3">
-        <?php
+        <div class="p-3">
+            <?php
+            $menuParameters = array(
+                'theme_location' => 'socials',
+                'link_before'     => '<span>',
+                'link_after'      => '</span>',
+                'before'        => '<section class="mb-4">',
+                'after'     => '</section>',
+                'add_a_class'     => 'btn btn-outline-light btn-floating m-1',
+                'container'       => false,
+                'echo'            => false,
+                'depth'           => 0,
+            );
 
-        $menuParameters = array(
-            'theme_location' => 'socials',
-            'link_before'     => '<span>',
-            'link_after'      => '</span>',
-            'before'        => '<section class="mb-4">',
-            'after'     => '</section>',
-            'add_a_class'     => 'btn btn-outline-light btn-floating m-1',
-            'container'       => false,
-            'echo'            => false,
-            'depth'           => 0,
-        );
-
-        echo strip_tags(wp_nav_menu($menuParameters), '<a><span><div>');
-        ?>
-    </div>
+            echo strip_tags(wp_nav_menu($menuParameters), '<a><span><div>');
+            ?>
+        </div>
         <!-- Section: Links -->
         <section class="row p-3">
             <!--Grid row-->
@@ -86,7 +85,7 @@
                             <i class="fab fa-apple-pay fa-2x"></i>
                         </li>
                         <li>
-                        <i class="fab fa-cc-amex fa-2x"></i>
+                            <i class="fab fa-cc-amex fa-2x"></i>
                         </li>
                     </ul>
 
@@ -96,7 +95,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <a href="<?php bloginfo('url')?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" /></a>
+                    <a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo" class="img-fluid float-end" /></a>
                 </div>
                 <!--Grid column-->
 
@@ -109,9 +108,6 @@
     </section>
 
     <!-- Section: Social media -->
-
-
-
 
     </div>
     <!--Grid row-->
