@@ -17,8 +17,7 @@
             <div class="page-wrapper">
                 <div class="page-content">
                   
-                    <p><?php _e( 'Prova sök eller använd menyn', 'sportstore' ); ?></p>
- 
+                    <p><?php _e( 'Prova sök eller använd menyn', 'sportstore' ); ?></p> 
 </div>
 
 
