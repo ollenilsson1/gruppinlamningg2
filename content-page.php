@@ -6,7 +6,7 @@
 ?>
 
 
-<div id="primary" class="col-xs-12 col-md-9">
+<div id="primary" class="">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <img src="<?php echo get_the_post_thumbnail_url() ?>" />
 <a href="<?php the_permalink();?>">

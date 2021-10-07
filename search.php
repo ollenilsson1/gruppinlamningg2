@@ -8,8 +8,8 @@ get_header(); ?>
 <main>
     <section>
         <div class="container">
-            <div class="row">
-                <div id="primary" class="col-xs-12 col-md-8 col-md-offset-2">
+            <div class="row d-flex justify-content-center">
+                <div id="primary" class="col-xs-12 col-md-8 col-md-offset-2 p-3 m-4 w-75">
  
             <?php if ( have_posts() ) : ?>
  
